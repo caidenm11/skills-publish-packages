@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Add your test steps here if needed...
+      - name: List files
+        run: ls -R
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
